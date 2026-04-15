@@ -65,23 +65,12 @@ const Hero = () => {
             <div className="hero-avatar">
               <img src={profilePic} alt="Nili Garala" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
             </div>
-
             <div className="hero-floating-cards">
-              <div className="floating-card">
-                <span className="icon">⚛️</span> React.js
-              </div>
-              <div className="floating-card">
-                <span className="icon">🟢</span> Node.js
-              </div>
-              <div className="floating-card">
-                <span className="icon">🍃</span> MongoDB
-              </div>
-              <div className="floating-card">
-                <span className="icon">🐘</span> PostgreSQL
-              </div>
-              <div className="floating-card">
-                <span className="icon">🐬</span> MySQL
-              </div>
+              <div className="floating-card"><span className="icon">⚛️</span> React.js</div>
+              <div className="floating-card"><span className="icon">🟢</span> Node.js</div>
+              <div className="floating-card"><span className="icon">🍃</span> MongoDB</div>
+              <div className="floating-card"><span className="icon">🐘</span> PostgreSQL</div>
+              <div className="floating-card"><span className="icon">🐬</span> MySQL</div>
             </div>
           </div>
         </div>

@@ -13,7 +13,7 @@ const Education = () => {
           </h2>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginTop: '48px' }}>
+        <div className="education-grid">
           <div className="education-card glass-card">
             <div className="education-icon">🎓</div>
             <h3 className="education-degree">Bachelor of Engineering (Computer)</h3>

@@ -604,6 +604,10 @@ button {
   height: 380px;
 }
 
+.hero-tech-pills {
+  display: none;
+}
+
 .hero-avatar-ring {
   position: absolute;
   inset: -20px;
@@ -1106,6 +1110,13 @@ button {
   background: var(--bg-secondary);
 }
 
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 48px;
+}
+
 .education-card {
   padding: 40px;
   margin: 0;
@@ -1348,6 +1359,7 @@ button {
 
   .hero-visual {
     order: 1;
+    overflow: visible;
   }
 
   .hero-description {
@@ -1364,18 +1376,46 @@ button {
   }
 
   .hero-avatar-wrapper {
-    width: 280px;
-    height: 280px;
+    width: 260px;
+    height: 260px;
+    margin: 60px auto;
   }
 
   .hero-avatar {
-    width: 280px;
-    height: 280px;
+    width: 260px;
+    height: 260px;
     font-size: 6rem;
   }
 
   .floating-card {
-    display: none;
+    font-size: 0.72rem;
+    padding: 8px 12px;
+    animation: none;
+  }
+
+  .floating-card:nth-child(1) {
+    top: -10%;
+    right: -35%;
+  }
+
+  .floating-card:nth-child(2) {
+    top: 35%;
+    right: -40%;
+  }
+
+  .floating-card:nth-child(3) {
+    bottom: -10%;
+    right: -30%;
+  }
+
+  .floating-card:nth-child(4) {
+    top: 20%;
+    left: -35%;
+  }
+
+  .floating-card:nth-child(5) {
+    bottom: 10%;
+    left: -30%;
   }
 
   .about .container {
@@ -1398,6 +1438,7 @@ button {
 @media (max-width: 768px) {
   :root {
     --section-padding: 70px 0;
+    --container-padding: 0 16px;
   }
 
   .navbar-links {
@@ -1451,6 +1492,10 @@ button {
     flex-direction: column;
     text-align: center;
   }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1459,15 +1504,27 @@ button {
   }
 
   .hero-avatar-wrapper {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
   }
 
   .hero-avatar {
-    width: 220px;
-    height: 220px;
-    font-size: 4.5rem;
+    width: 200px;
+    height: 200px;
+    font-size: 4rem;
   }
+
+  .floating-card {
+    font-size: 0.65rem;
+    padding: 6px 10px;
+  }
+
+  .floating-card:nth-child(1) { top: -12%; right: -38%; }
+  .floating-card:nth-child(2) { top: 33%; right: -42%; }
+  .floating-card:nth-child(3) { bottom: -12%; right: -32%; }
+  .floating-card:nth-child(4) { top: 18%; left: -38%; }
+  .floating-card:nth-child(5) { bottom: 8%; left: -32%; }
 
   .section-title {
     font-size: 1.8rem;
@@ -1475,5 +1532,79 @@ button {
 
   .timeline-header {
     flex-direction: column;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-category {
+    padding: 20px;
+  }
+
+  .skill-tag {
+    font-size: 0.78rem;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .skill-category {
+    padding: 16px;
+  }
+
+  .skill-category-title {
+    font-size: 1rem;
+  }
+
+  .skill-tag {
+    font-size: 0.72rem;
+    padding: 5px 10px;
+  }
+
+  .skill-category-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card {
+    padding: 24px 16px;
+  }
+
+  .education-degree {
+    font-size: 1.1rem;
+  }
+
+  .education-school {
+    font-size: 0.9rem;
+  }
+
+  .education-meta {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .education-meta span {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .education-icon {
+    width: 56px;
+    height: 56px;
+    font-size: 1.5rem;
   }
 }
