@@ -12,17 +12,7 @@ const experienceData = [
       'Implemented efficient form handling with Formik + Yup validation, streamlining data entry across 15+ forms in the ERP system.',
     ],
   },
-  {
-    role: 'MERN Stack Developer',
-    company: 'ShivAurica',
-    date: 'Sep 2025 – Jan 2026',
-    points: [
-      'Built reusable component library using Shadcn UI and Framer Motion, reducing UI development time by ~30% across 3 concurrent projects.',
-      'Developed responsive, mobile-first interfaces with Tailwind CSS and Bootstrap, achieving cross-browser compatibility across Chrome, Firefox, and Safari.',
-      'Integrated MongoDB with Express.js backend services, implementing CRUD operations and RESTful API patterns following MVC architecture.',
-      'Collaborated in Agile sprints to deliver features on schedule, participating in code reviews and daily standups.',
-    ],
-  },
+
   {
     role: 'MERN Stack Developer',
     company: 'Excelsior Technologies',
