@@ -4,7 +4,7 @@ const experienceData = [
   {
     role: 'MERN Stack Developer',
     company: 'Mysticore InfoTech Pvt. Ltd',
-    date: 'Feb 2026 – Present',
+    date: 'Sep 2025 – April 2026',
     points: [
       'Architect and deliver end-to-end features for a logistics ERP serving 500+ daily operations, using React.js, Node.js, and MySQL Stored Procedures.',
       'Built scalable RESTful APIs with Express.js and implemented JWT-based authentication with role-based access control (RBAC) for multi-user workflows.',
